@@ -1,0 +1,140 @@
+/* General */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #ffffff;
+    color: #222;
+}
+
+/* Header */
+header {
+    background: #0b3b2e;
+    color: white;
+    padding: 20px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* logo and text aligned left */
+    gap: 15px; /* space between logo and text */
+}
+
+header img {
+    height: 60px; /* adjust size as needed */
+    width: auto;
+}
+
+
+header h1 {
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+/* Hero Section */
+.hero {
+    background: #0b3b2e;
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.3rem;
+    margin-bottom: 25px;
+}
+
+.hero a {
+    background: #b30000;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+/* Values Section */
+#values {
+    padding: 60px 20px;
+    background: #f9f9f9;
+}
+
+#values h2 {
+    text-align: center;
+    font-size: 2.2rem;
+    color: #0b3b2e;
+}
+
+#values p.intro {
+    text-align: center;
+    max-width: 800px;
+    margin: 10px auto 40px;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.value-box {
+    background: white;
+    border: 1px solid #ddd;
+    padding: 25px;
+    border-radius: 8px;
+}
+
+.value-box h3 {
+    margin-top: 0;
+    color: #0b3b2e;
+}
+
+/* Services Section */
+#services {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#services h2 {
+    font-size: 2.2rem;
+    color: #0b3b2e;
+}
+
+/* Contact Section */
+#contact {
+    background: #0b3b2e;
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#contact a {
+    background: #b30000;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+/* Footer */
+footer {
+    padding: 20px;
+    text-align: center;
+    background: #111;
+    color: white;
+    font-size: 0.9rem;
+}
+
+/* Mobile */
+@media(max-width: 700px) {
+    .values-grid {
+        grid-template-columns: 1fr;
+    }
+}
