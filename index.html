@@ -1,80 +1,104 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rose Electric Co</title>
-    <!-- Link to external CSS -->
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Your Site — Clean & Modern</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="/">Rose</a>
 
-<header>
-    <img src="logo.png" alt="Rose Electric Co Logo">
-    <h1>Rose Electric Co</h1>
-</header>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="main-nav" id="navToggle">
+        <span class="sr-only">Toggle navigation</span>
+        ☰
+      </button>
 
-
-<!-- Values Section -->
-<section id="values">
-    <h2>Our Values</h2>
-    <p class="intro">
-        At Rose Electric Co, our values guide everything we do. They shape the quality of our work, 
-        our relationships with clients, and the safety of every job.
-    </p>
-
-    <div class="values-grid">
-        <div class="value-box">
-            <h3>Quality Workmanship</h3>
-            <p>Clean, precise, compliant electrical work carried out with pride and attention to detail.</p>
-        </div>
-
-        <div class="value-box">
-            <h3>Respect</h3>
-            <p>Respect for your home, your time, and the trust you place in our craftsmanship.</p>
-        </div>
-
-        <div class="value-box">
-            <h3>Safety First</h3>
-            <p>Every job meets or exceeds Australian safety standards — no shortcuts, ever.</p>
-        </div>
-
-        <div class="value-box">
-            <h3>Problem-Solving Mindset</h3>
-            <p>We don’t just fix electrical issues — we deliver smart, reliable long-term solutions.</p>
-        </div>
+      <nav id="main-nav" class="nav">
+        <ul class="nav-list">
+          <li><a href="#features">Features</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact" class="btn btn-ghost">Contact</a></li>
+        </ul>
+      </nav>
     </div>
-</section>
+  </header>
 
-<!-- Hero Section / Booking -->
-<section class="hero">
-    <h2>Electrical Work Done Properly</h2>
-    <p>Reliable, safe, high-quality electrical services across Tasmania.</p>
-    <a style='border:none;' href='https://book.servicem8.com/request_service_booking?strVendorUUID=11da02df-30a5-43ff-8818-232d134b8d3b#1ca905c4-cb59-4e91-98e9-23851543d45b><img src='https://www.servicem8.com/images/plugin_online_booking/Booking-Request-Button.png' width='250' height='69' alt='Online Enquiry powered by ServiceM8'/></a>
-</section>
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <h1>Beautiful, modern websites — made simple</h1>
+          <p class="lead">Clean layout, responsive components, and a style system that’s easy to customize.</p>
+          <p class="hero-ctas">
+            <a class="btn btn-primary" href="#features">Get Started</a>
+            <a class="btn btn-ghost" href="#about">Learn More</a>
+          </p>
+        </div>
+        <div class="hero-image" aria-hidden="true">
+          <!-- Replace with an SVG or optimized image -->
+          <div class="mock-illustration">🌹</div>
+        </div>
+      </div>
+    </section>
 
-<!-- Services -->
-<section id="services">
-    <h2>Services</h2>
-    <p>• Residential Electrical<br>
-       • Commercial Fit-Outs<br>
-       • Switchboards & Safety Upgrades<br>
-       • Lighting Installations<br>
-       • Renovation & Upgrade Work<br>
-       • Fault Finding & Repairs
-    </p>
-</section>
+    <section id="features" class="container section">
+      <h2 class="section-title">Features</h2>
+      <div class="grid grid-3">
+        <article class="card">
+          <h3>Responsive</h3>
+          <p>Layouts that adapt across devices for a consistent experience.</p>
+        </article>
 
-<!-- Contact / Booking -->
-<section id="contact">
-    <h2>Ready to Book?</h2>
-    <p>Click below to lock in a time via our online booking system.</p>
-    <a style='border:none;' href='https://book.servicem8.com/request_service_booking?strVendorUUID=11da02df-30a5-43ff-8818-232d134b8d3b#1ca905c4-cb59-4e91-98e9-23851543d45b'><img src='https://www.servicem8.com/images/plugin_online_booking/Booking-Request-Button.png' width='250' height='69' alt='Online Enquiry powered by ServiceM8'/></a>
-</section>
+        <article class="card">
+          <h3>Customizable</h3>
+          <p>Colors and typography driven by variables — theme easily.</p>
+        </article>
 
-<footer>
-    Rose Electric Co — All Rights Reserved
-</footer>
+        <article class="card">
+          <h3>Accessible</h3>
+          <p>Semantic HTML and focus states help everyone navigate your site.</p>
+        </article>
+      </div>
+    </section>
 
+    <section id="about" class="container section alt">
+      <div class="split">
+        <div>
+          <h2>About Rose</h2>
+          <p>Short, meaningful description about the project or yourself. Keep it concise and highlight value.</p>
+          <p><a class="btn btn-primary" href="#contact">Work with me</a></p>
+        </div>
+        <div>
+          <!-- Optional: add an image or testimonial here -->
+          <div class="card muted">
+            <h4>Quick tip</h4>
+            <p>Use SVG icons and compressed images for fast load times.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="container section">
+      <h2>Contact</h2>
+      <p>Keep a short contact form or an email link. Example:</p>
+      <p><a href="mailto:hello@example.com" class="btn btn-ghost">hello@example.com</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Rose — Built with care.</p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
 </body>
 </html>
